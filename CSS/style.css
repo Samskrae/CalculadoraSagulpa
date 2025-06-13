@@ -1,0 +1,557 @@
+:root {
+    --color-background-body: #0b537f;
+    --color-background-container: #ffffff;
+    --color-text-primary: #2c3e50;
+    --color-text-secondary: #7f8c8d;
+    --color-interactive-primary: #448ebc;
+    --color-interactive-hover: #e9761f;
+    --color-text-on-interactive: #ffffff;
+    --color-border-light: #dce4ec;
+    --color-accent-info: #17a2b8;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background-body);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+       display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* body::before{
+    content: "";
+    position: fixed;
+    top: 25vh;
+    left: 0;
+    width: 35%;
+    height: 45%;
+    background-image: url('../img/SAGULPA_SLOGAN_AZUL.svg');
+    background-size: cover;
+    background-position: center;
+    opacity: 1; 
+    z-index: -1;
+    
+} */
+
+.logo{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 250px;
+}
+
+
+button{
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: var(--color-interactive-hover);
+}
+
+.festivos-container {
+    position: fixed; 
+    top: 15px;
+    right: 20px;
+    z-index: 1000; 
+}
+
+.festivos-button {
+    background-color: var(--color-interactive-primary);
+    color: var(--color-text-on-interactive);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 0.8px 5px black;
+}
+
+.festivos-button:hover {
+    background-color: var(--color-interactive-hover);
+}
+
+.contenedor-principal-centrado {
+    background-color: var(--color-background-container);
+    padding: 30px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    width: 500px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+#parking-form h1 {
+    text-align: center;
+    color: var(--color-text-primary);
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+#parking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--color-text-secondary);
+}
+
+#parking-form input[type="datetime-local"],
+#parking-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border-light);
+    background-color: var(--color-background-container);
+    color: var(--color-text-primary);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#parking-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-interactive-primary);
+    color: var(--color-text-on-interactive);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+#parking-form button[type="submit"]:hover {
+    background-color: var(--color-interactive-hover);
+}
+
+.login-form h2 {
+    text-align: center;
+    color: var(--color-text-primary);
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--color-text-secondary);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border-light);
+    background-color: var(--color-background-container);
+    color: var(--color-text-primary);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-interactive-primary);
+    color: var(--color-text-on-interactive);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: var(--color-interactive-hover);
+}
+
+form#diaFestivo h1 {
+    text-align: center;
+    color: var(--color-text-primary);
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+form#diaFestivo p {
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+    font-weight: bold; 
+}
+
+form#diaFestivo input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border-light);
+    background-color: var(--color-background-container);
+    color: var(--color-text-primary);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form#diaFestivo button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-interactive-primary);
+    color: var(--color-text-on-interactive);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form#diaFestivo button[type="submit"]:hover {
+    background-color: var(--color-interactive-hover);
+}
+
+div#lista-festivos {
+    margin-top: 30px;
+}
+
+#lista-festivos h2 {
+    text-align: center;
+    color: var(--color-text-primary);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+#lista-festivos ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#lista-festivos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+    color: var(--color-text-primary);
+}
+
+#lista-festivos li:nth-child(odd) {
+    background-color: var(--color-background-container);
+}
+
+#lista-festivos li:nth-child(even) {
+    background-color: #f8f9fa; 
+}
+
+#lista-festivos .eliminar-festivo { 
+    background-color: #e74c3c; 
+    color: var(--color-text-on-interactive);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+#lista-festivos .eliminar-festivo:hover {
+    background-color: #c0392b; 
+}
+
+#lista-festivos p {
+    text-align: center;
+    padding: 20px;
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+
+.mensaje-container {
+    margin-top: 15px;
+    min-height: 40px; 
+}
+
+.mensaje {
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mensaje.exito {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mensaje.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#fee-breakdown-display {
+    display: none; 
+    margin-top: 20px; 
+    padding: 20px; 
+    background-color: #f8f9fa; 
+    border: 1px solid var(--color-border-light);
+    border-radius: 5px;
+}
+
+#fee-breakdown-display h2 { 
+    text-align: center;
+    color: var(--color-text-primary);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#fee-breakdown-display h4 {
+    color: var(--color-text-primary);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#fee-breakdown-display p {
+    font-size: 1em;
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+#fee-breakdown-display p strong {
+    color: var(--color-text-primary);
+}
+
+#fee-breakdown-display hr {
+    border: 0;
+    border-top: 1px solid var(--color-border-light);
+    margin: 10px 0;
+}
+
+#tariff-guide-display {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    max-height: 90vh; 
+    overflow-y: auto; 
+    background-color: var(--color-background-container);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    z-index: 900; 
+}
+
+#tariff-guide-display h2 {
+    color: var(--color-text-primary);
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tariff-guide-display h3 {
+    color: var(--color-text-primary);
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#tariff-guide-display ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+#tariff-guide-display li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#tariff-guide-display .grupo-dia-tarifa {
+    display: block;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+#tariff-guide-display .lista-subtarifas {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#tariff-guide-display .lista-subtarifas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px; 
+    font-size: 0.9em;
+    color: var(--color-text-secondary); 
+}
+
+#tariff-guide-display .lista-subtarifas li .descripcion-tarifa {
+    font-weight: normal;
+    color: var(--color-text-secondary);
+    margin-right: 10px; 
+}
+
+#tariff-guide-display .lista-subtarifas li .tasa-tarifa {
+    color: var(--color-text-secondary);
+    white-space: nowrap; 
+}
+
+#tariff-guide-display p.notes {
+    font-size: 0.9em;
+    color: var(--color-text-secondary);
+    margin-top: 15px;
+    text-align: center; 
+    font-style: italic; 
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-principal-centrado {
+        padding: 20px; 
+        width: 90%;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #tariff-guide-display {
+        position: static; 
+        transform: none; 
+        width: 90%;
+        max-width: 450px; 
+        margin: 20px auto; 
+        right: auto;
+        top: auto;
+    }
+
+    #parking-form h1 {
+        font-size: 1.5em;
+    }
+
+    #parking-form input[type="datetime-local"],
+    #parking-form select,
+    #parking-form button[type="submit"] {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #parking-form h1 {
+        font-size: 1.3em;
+    }
+    
+    .festivos-container {
+        top: 10px;
+        right: 10px;
+    }
+
+    .festivos-button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    #tariff-guide-display {
+        padding: 15px;
+    }
+    #tariff-guide-display h2 {
+        font-size: 1.4em;
+    }
+    #tariff-guide-display h3 {
+        font-size: 1.15em;
+    }
+}
+
+#resultado-calculo {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--color-text-primary); 
+    width: 100%; 
+    max-width: 450px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resultado-calculo.error { 
+    color: #721c24; 
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--color-text-primary);
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.expandir-desglose {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--color-interactive-primary); 
+}
+
+.expandir-desglose:hover {
+    color: var(--color-interactive-hover); 
+}
+
+.boton-estilo {
+    display: block;
+    width: auto; 
+    margin: 20px auto 10px auto; 
+    padding: 10px 20px;
+    background-color: var(--color-interactive-primary); 
+    color: var(--color-text-on-interactive);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+
+.boton-estilo:hover {
+    background-color: var(--color-interactive-hover); 
+}
+
+.gran-total .fa-circle-info {
+    margin-left: 8px;
+    color: var(--color-accent-info); 
+    cursor: help;
+}
+
+#fee-breakdown-display .gran-total {
+    color: var(--color-text-primary);
+    font-weight: bold;
+}

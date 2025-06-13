@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Aparcamientos</title>
+    <script src="Scripts/calculadora.js" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function redirigirLogin() {
+            window.location.href = 'HTML/login.html';
+        }
+        
+    </script>
+    <link rel="shortcut icon" href="Img/Icon.png" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+</head>
+<body>
+    <img src="Img/SAGULPA_HORIZ_1.svg" alt="Logo de la empresa" class="logo">
+    <div class="festivos-container" >
+        <button class="festivos-button" onclick="redirigirLogin()">Login</button>
+    </div>
+    <div class="contenedor-principal-centrado">
+        <form id="parking-form" class="container" >
+            <h1 class="text-3xl font-bold">Calculadora de Aparcamiento</h1>
+            <label for="inicio">Inicio</label>
+            <input type="datetime-local" name="inicio" id="inicio" required>
+
+            <label for="fin">Pago</label>
+            <input type="datetime-local" name="fin" id="fin" required>
+
+            <select name="parking-list" id="parking-list">
+                <option value="0">Seleccione un aparcamiento</option>
+                <option value="1">Elder</option>
+                <option value="2">Intermodal Del Rincón</option>
+                <option value="3">Mercado de Vegueta</option>
+                <option value="4">Metropol</option>
+                <option value="5">Nuevos Juzgados</option>
+                <option value="6">San Bernardo</option>
+                <option value="7">Subida De Mata</option>
+            </select>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="fee-breakdown-display">
+        </div>
+    </div>
+    <div id="tariff-guide-display">
+    </div>
+    <div id="resultado-calculo" style="display: none"></div>
+</body>
+</html>

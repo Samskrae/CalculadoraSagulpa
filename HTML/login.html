@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script>
+        function redirigirLogin() {
+            window.location.href = '../index.html';
+        }
+    </script>
+    <link rel="shortcut icon" href="../Img/Icon.png" />
+</head>
+<body>
+    <img src="../Img/SAGULPA_HORIZ_1.svg" alt="Logo de la empresa" class="logo">
+    <div class="festivos-container">
+        <button class="festivos-button" onclick="redirigirLogin()">Inicio</button>
+    </div>
+    <div class="contenedor-principal-centrado">
+        <form id="login-form" class="login-form" action="../Scripts/verificar_login.php" method="POST">
+            <h2>Iniciar Sesión</h2>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario"  >
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+
+            <button type="submit">Iniciar Sesión</button>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Días Festivos</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../Scripts/cargarLista.js" defer></script>
+    <script>
+        function redirigirLogin() {
+            window.location.href = '../index.html';
+        }
+    </script>
+    <link rel="shortcut icon" href="../Img/Icon.png" />
+</head>
+<body>
+    <img src="../Img/SAGULPA_HORIZ_1.svg" alt="Logo de la empresa" class="logo">
+    <div class="festivos-container">
+        <button class="festivos-button" onclick="redirigirLogin()">Inicio</button>
+    </div>
+    <div class="contenedor-principal-centrado">
+        <form action="../Scripts/procesarForm.php" method="POST" id="diaFestivo">
+            <h1>Asignar Día Festivo</h1>
+            <p>Día festivo</p>
+            <input type="date" name="dia" id="dia" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="lista-festivos"></div>
+    </div>
+</body>
+</html>
