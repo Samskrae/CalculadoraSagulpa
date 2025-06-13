@@ -1,6 +1,6 @@
 # 📊 CalculadoraSagulpa
 
-¡Bienvenido a **CalculadoraSagulpa**! Este es el repositorio para el sistema de gestión de la base de datos que alimenta la aplicación. A continuación encontrarás toda la información necesaria para entender y trabajar con la base de datos del proyecto.
+Este es el repositorio para el sistema de gestión de la base de datos que alimenta la aplicación. A continuación encontrarás toda la información necesaria para entender y trabajar con la base de datos del proyecto.
 
 ---
 
