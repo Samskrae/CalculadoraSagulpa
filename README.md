@@ -71,3 +71,10 @@ $password = "P@ssw0rd_S3gur@_2025!";
 ## ⚙️ Modificaciones
 El programa se encuentra en una máquina Apache, esto quiere decir que si hace falta modificarlo estará ubicado en /var/www/Calculadora/.
 
+Recordatorio:
+Usuario por defecto = root
+passwd = root
+
+Usuario Administrador = Admin
+passwd = Sagulpa
+
