@@ -60,6 +60,12 @@ Si necesitas revocar el acceso a un usuario, utiliza `eliminar_usuario`. Este pr
 CALL eliminar_usuario('nombre_de_usuario_a_eliminar');
 ```
 
+
+---
+$username = "calculadora_user";
+$password = "P@ssw0rd_S3gur@_2025!";
+
+
 ---
 
 ## ⚙️ Modificaciones
