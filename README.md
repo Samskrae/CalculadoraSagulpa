@@ -26,7 +26,7 @@ Esta tabla almacena la información de los usuarios con acceso al sistema.
 
 <br>
 
-#### Tabla `fechas`
+#### Tabla `diasfestivos`
 
 Utilizada para registrar fechas relevantes para los cálculos de la aplicación.
 
@@ -50,12 +50,6 @@ Utiliza `agregar_usuario` para registrar un nuevo usuario. Este procedimiento se
 CALL agregar_usuario('nombre_de_usuario', 'contraseña_a_utilizar');
 ```
 
-**Ejemplo:**
-
-```sql
-CALL agregar_usuario('juan.perez', 'MiContraseñaSegura123');
-```
-
 ### 🗑️ Eliminar un Usuario Existente
 
 Si necesitas revocar el acceso a un usuario, utiliza `eliminar_usuario`. Este procedimiento eliminará de forma segura el registro del usuario basándose en su nombre.
@@ -66,22 +60,8 @@ Si necesitas revocar el acceso a un usuario, utiliza `eliminar_usuario`. Este pr
 CALL eliminar_usuario('nombre_de_usuario_a_eliminar');
 ```
 
-**Ejemplo:**
-
-```sql
-CALL eliminar_usuario('juan.perez');
-```
-
 ---
 
-## 🚀 Puesta en Marcha
+## ⚙️ Modificaciones
+El programa se encuentra en una máquina Apache, esto quiere decir que si hace falta modificarlo estará ubicado en /var/www/Calculadora/.
 
-Para desplegar esta base de datos en tu entorno local o en un servidor, sigue estos pasos:
-
-1.  **Crea la Base de Datos:**
-    ```sql
-    CREATE DATABASE calculadoraparkin;
-    ```
-2.  **Carga el Script SQL:** Importa el archivo `.sql` que contiene la definición de las tablas y los procedimientos almacenados.
-3.  **Verifica la Instalación:** Conéctate a la base de datos y ejecuta `SHOW TABLES;` para confirmar que `usuarios` y `fechas` se han creado correctamente.
-4.  **¡Listo!** Ya puedes empezar a gestionar usuarios y registrar fechas utilizando los procedimientos facilitados.
